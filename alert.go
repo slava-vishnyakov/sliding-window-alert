@@ -6,7 +6,7 @@ type alert struct {
 	buf []bool
 }
 
-func NewAlert(cap int) *alert {
+func NewSlidingWindowAlert(cap int) *alert {
 	a := alert{}
 	a.i = 0
 	a.cap = cap

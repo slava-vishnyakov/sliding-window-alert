@@ -7,7 +7,7 @@ import (
 )
 
 func TestFirst(t *testing.T) {
-	a := NewAlert(3)
+	a := NewSlidingWindowAlert(3)
 
 	assert.False(t, a.AllTrue())
 	a.Append(false)
